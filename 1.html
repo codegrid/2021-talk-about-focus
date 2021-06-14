@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>focus-visible-test-1</title>
+  <style>
+    input{
+      margin: 10px;
+      padding: 5px;
+    }
+    button {
+      margin: 10px;
+    }
+    .focus-only:focus {
+      outline: 2px solid limegreen;
+    }
+    .focus-visible-only:focus-visible {
+      outline: 4px dashed tomato;
+    }
+  </style>  
+</head>
+<body>
+  <input value="デフォルトのスタイル"><br>
+  <button>デフォルトのスタイル</button><br>
+  <input class="focus-only" value=":focusのみ"><br>
+  <button class="focus-only">:focusのみ</button><br>
+  <input class="focus-visible-only" value=":focus-visibleのみ"><br>
+  <button class="focus-visible-only">:focus-visibleのみ</button>
+</body>
+</html> 

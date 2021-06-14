@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>focus-visible-test-2</title>
+  <style>
+    .button-1:focus {
+      outline: 5px dotted tomato;
+    }
+    .button-2:focus-visible {
+      outline: 5px dotted limegreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>何も指定していないボタン</h2>
+  <p>次のボタンは、キーボード操作をしたときには、フォーカスリングが表示されます。マウス操作をしたときには表示されません。</p>
+  <button type="button">ボタン</button>
+
+  <h2>:focusでフォーカスリングをカスタマイズしたボタン</h2>
+  <p>次のボタンは、キーボード操作やマウス操作をしたときに、カスタマイズしたフォーカスリング（赤）が表示されます。</p>
+  <button type="button" class="button-1">ボタン</button>
+
+  <h2>:focus-visible擬似クラスでフォーカスリングをカスタマイズしたボタン</h2>
+  <p>次のボタンは、キーボード操作のときにカスタマイズしたフォーカスリング（緑）が表示されますが、マウス操作をしたときには表示されません。</p>
+  <button type="button" class="button-2">ボタン</button>
+</body>
+</html>
